@@ -121,6 +121,30 @@ You can follow the generic instructions or install Scrapy from `AUR Scrapy packa
 
     yaourt -S scrapy
 
+Cygwin on Windows
+---------
+
+This guide assumes you have a working Python installation. 
+
+    It is recommended you add the path to your Python installation to your /home/user_name/.bash_profile file. 
+      Example where Python is installed to c:\Programs\Python35-64: export PATH=/cygdrive/c/Programs/Python35-32:$PATH
+
+First ensure you have all the necessary dependencies installed in Cygwin. Do this from windows command line and make sure to Run Command Prompt As Administrator.::
+
+    cd C:\path_to_cygwin_installer
+    setup-x86_64.exe -q -P wget,tar,qawk,bzip2,subversion,nano,vim,bash,binutils,bzip2,cygwin,gcc4-cor,gcc4-g++,gzip,m4,make,unzip,zip,libffi-devel,openssl-devel,python-lxml
+    NOTE: setup-x86_64.exe is the name of the installer file. Edit as per the name of your file!
+
+Install PIP
+
+    Download get-pip.py from here: https://bootstrap.pypa.io/get-pip.py or follow the guide here: https://pip.pypa.io/en/latest/installing/ 
+    Copy the get-pip.py file to your home folder, typically C:\path_to_cygwin\home\user_name where user_name is your PC username.
+    From the Cygwin shell, run this: python get-pip.py
+
+Install Scrappy
+
+    pip install Scrapy
+
 Mac OS X
 --------
 
